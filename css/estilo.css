@@ -1,0 +1,390 @@
+/*COLORES*/
+/*REM CONTROL*/
+@media screen and (min-width: 992px) {
+  /* line 10, ../sass/estilo.scss */
+  html {
+    /*COL-LG*/
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 991px) {
+  /* line 10, ../sass/estilo.scss */
+  html {
+    /*COL-MD*/
+    font-size: 23px;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 10, ../sass/estilo.scss */
+  html {
+    /*COL-SM*/
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 543px) {
+  /* line 10, ../sass/estilo.scss */
+  html {
+    /*COL-XS*/
+    font-size: 20px;
+  }
+}
+
+/*TEXTOS*/
+/* line 45, ../sass/estilo.scss */
+h1 {
+  color: #222222;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+/* line 54, ../sass/estilo.scss */
+h2 {
+  color: #545454;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 0.6rem;
+  letter-spacing: 1px;
+  line-height: 0.9rem;
+  text-transform: uppercase;
+}
+
+/* line 65, ../sass/estilo.scss */
+h3 {
+  color: #222222;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 0.65rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* line 76, ../sass/estilo.scss */
+p {
+  color: #4f4f4f;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.62rem;
+  font-weight: 400;
+  line-height: 1rem;
+}
+
+/*EFECTOS*/
+/* line 99, ../sass/estilo.scss */
+.activo {
+  color: #F32A2A !important;
+}
+
+/*VARIOS*/
+/* line 104, ../sass/estilo.scss */
+body {
+  height: 100%;
+  /*overflow: hidden;*/
+  padding: 0;
+  margin: 0;
+}
+/* line 107, ../sass/estilo.scss */
+body ::selection {
+  /*SELECCIONAR*/
+  background-color: #F32A2A;
+  color: #ffffff;
+}
+
+/* line 113, ../sass/estilo.scss */
+html {
+  height: 100%;
+}
+
+/* line 117, ../sass/estilo.scss */
+.no-gutter > [class*='col-'] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/* line 122, ../sass/estilo.scss */
+button {
+  background-color: #F32A2A;
+  color: #ffffff;
+  border-radius: 0.2rem;
+  border-style: none;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  box-shadow: inset 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-family: 'Carrois Gothic SC', sans-serif;
+  font-size: 0.5rem;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+/* line 139, ../sass/estilo.scss */
+button:hover {
+  background-color: #545454;
+}
+
+/*REORDENAR COLUMNAS*/
+@media (max-width: 767px) {
+  /* line 148, ../sass/estilo.scss */
+  .row.reorder-xs-sm {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+    direction: rtl;
+  }
+
+  /* line 156, ../sass/estilo.scss */
+  .row.reorder-xs-sm > [class*="col-"] {
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+    direction: ltr;
+  }
+}
+/*PERMANENTES*/
+/* line 167, ../sass/estilo.scss */
+.contenedor {
+  padding-top: 4rem;
+  height: 100%;
+}
+
+/* line 172, ../sass/estilo.scss */
+.llenar {
+  height: 100%;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  color: #efefef;
+  overflow: hidden;
+}
+
+/* line 181, ../sass/estilo.scss */
+.barra_nav {
+  background-color: rgba(255, 255, 255, 0.9);
+  height: 4rem;
+  width: 100%;
+  z-index: 2;
+  top: 0;
+  position: fixed;
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.18);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.18);
+}
+@media screen and (max-width: 766px) {
+  /* line 181, ../sass/estilo.scss */
+  .barra_nav {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+/* line 198, ../sass/estilo.scss */
+.barra_nav img {
+  position: relative;
+  height: 60%;
+  top: 0.5rem;
+}
+
+/* line 209, ../sass/estilo.scss */
+.menu {
+  width: 75%;
+  height: 100%;
+  float: right;
+  display: table;
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+/* line 214, ../sass/estilo.scss */
+.menu ul {
+  width: 100%;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: right;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+@media screen and (max-width: 991px) {
+  /* line 214, ../sass/estilo.scss */
+  .menu ul {
+    text-align: center;
+    vertical-align: inherit;
+    display: inherit;
+  }
+}
+/* line 229, ../sass/estilo.scss */
+.menu li {
+  display: inline-block;
+  padding: 5px;
+  margin-right: 12px;
+  cursor: pointer;
+  color: #545454;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 0.6rem;
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+/* line 37, ../sass/estilo.scss */
+.menu li:visited {
+  color: inherit;
+}
+/* line 40, ../sass/estilo.scss */
+.menu li:hover {
+  color: #F32A2A;
+}
+@media screen and (max-width: 991px) {
+  /* line 229, ../sass/estilo.scss */
+  .menu li {
+    width: 100%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.75rem;
+    background-color: #222222;
+    color: #a5a5a5;
+    border-bottom: 1px solid #a5a5a5;
+  }
+}
+@media screen and (max-width: 991px) {
+  /* line 244, ../sass/estilo.scss */
+  .menu li:hover {
+    background-color: #ffffff;
+  }
+}
+@media screen and (max-width: 991px) {
+  /* line 209, ../sass/estilo.scss */
+  .menu {
+    float: none;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 4.1rem;
+    height: 0px;
+    overflow: hidden;
+    display: block;
+  }
+}
+
+/* line 263, ../sass/estilo.scss */
+.btn_menu {
+  padding: 10px 12px 10px 12px;
+  display: inline-block;
+  position: relative;
+  float: right;
+  top: 15px;
+  border-radius: 0.2rem;
+  color: #222222;
+  cursor: pointer;
+}
+/* line 272, ../sass/estilo.scss */
+.btn_menu span {
+  display: inline-block;
+  font-size: 1.2rem;
+}
+/* line 276, ../sass/estilo.scss */
+.btn_menu:hover {
+  color: #a5a5a5;
+}
+
+/*GRAL SECCIONES*/
+/* line 282, ../sass/estilo.scss */
+.wrapper {
+  overflow: auto;
+}
+
+/* line 285, ../sass/estilo.scss */
+.row_fluida {
+  white-space: nowrap;
+  width: 600%;
+  position: relative;
+}
+
+/* line 290, ../sass/estilo.scss */
+.seccion {
+  display: inline-block;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 297, ../sass/estilo.scss */
+#seccion_1 {
+  background-color: pink;
+}
+
+/* line 300, ../sass/estilo.scss */
+#seccion_2 {
+  background-color: orange;
+}
+
+/* line 303, ../sass/estilo.scss */
+#seccion_3 {
+  background-color: blue;
+}
+
+/* line 306, ../sass/estilo.scss */
+#seccion_4 {
+  background-color: skyblue;
+}
+
+/* line 309, ../sass/estilo.scss */
+#seccion_5 {
+  background-color: red;
+}
+
+/* line 312, ../sass/estilo.scss */
+#seccion_6 {
+  background-color: brown;
+}
+
+/* INICIO */
+/* line 317, ../sass/estilo.scss */
+.banner {
+  padding: 0;
+  margin: 0;
+}
+/* line 319, ../sass/estilo.scss */
+.banner img {
+  width: 100vw;
+  height: 100vh;
+}
+@media screen and (max-width: 991px) {
+  /* line 319, ../sass/estilo.scss */
+  .banner img {
+    width: auto;
+  }
+}
+
+/* line 327, ../sass/estilo.scss */
+#slide_2, #slide_3 {
+  display: none;
+}
+
+/*NOSOTROS*/
+/* line 332, ../sass/estilo.scss */
+.uno {
+  background-color: red;
+}
+
+/* line 335, ../sass/estilo.scss */
+.dos {
+  background-color: brown;
+}
