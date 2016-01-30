@@ -44,22 +44,31 @@ $(document).ready(function(){
     }
 /*NAVEGAR SECCIONES*/
      $("#btn_inicio").click(function(){
+        $("#seccion_1").fadeIn("fast");
         $(".row_fluida").animate({"left":'0%'});
     });
      $("#btn_nosotros").click(function(){
-        $(".row_fluida").animate({"left":'-100%'});
+        $(".row_fluida").animate({"left":'-100%'}, 
+            function(){
+                $("#seccion_1").css({"display": 'none'});
+                $(".row_fluida").css({"left":'0%'});
+        });
     });
     $("#btn_servicios").click(function(){
-        $(".row_fluida").animate({"left":'-200%'});
+        $("#seccion_1").fadeOut("fast");
+        $(".row_fluida").animate({"left":'-100%'});
     });
     $("#btn_portafolio").click(function(){
-        $(".row_fluida").animate({"left":'-300%'});
+        $("#seccion_1").fadeOut("fast");
+        $(".row_fluida").animate({"left":'-200%'});
     });
     $("#btn_eventos").click(function(){
-        $(".row_fluida").animate({"left":'-400%'});
+        $("#seccion_1").fadeOut("fast");
+        $(".row_fluida").animate({"left":'-300%'});
     });
     $("#btn_contacto").click(function(){
-        $(".row_fluida").animate({"left":'-500%'});
+        $("#seccion_1").fadeOut("fast");
+        $(".row_fluida").animate({"left":'-400%'});
     });
 });
 

@@ -79,29 +79,28 @@ p {
 /* line 104, ../sass/estilo.scss */
 body {
   height: 100%;
-  /*overflow: hidden;*/
   padding: 0;
   margin: 0;
 }
-/* line 107, ../sass/estilo.scss */
+/* line 106, ../sass/estilo.scss */
 body ::selection {
   /*SELECCIONAR*/
   background-color: #F32A2A;
   color: #ffffff;
 }
 
-/* line 113, ../sass/estilo.scss */
+/* line 112, ../sass/estilo.scss */
 html {
   height: 100%;
 }
 
-/* line 117, ../sass/estilo.scss */
+/* line 116, ../sass/estilo.scss */
 .no-gutter > [class*='col-'] {
   padding-right: 0;
   padding-left: 0;
 }
 
-/* line 122, ../sass/estilo.scss */
+/* line 121, ../sass/estilo.scss */
 button {
   background-color: #F32A2A;
   color: #ffffff;
@@ -120,14 +119,14 @@ button {
   -o-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
 }
-/* line 139, ../sass/estilo.scss */
+/* line 138, ../sass/estilo.scss */
 button:hover {
   background-color: #545454;
 }
 
 /*REORDENAR COLUMNAS*/
-@media (max-width: 767px) {
-  /* line 148, ../sass/estilo.scss */
+@media (max-width: 991px) {
+  /* line 147, ../sass/estilo.scss */
   .row.reorder-xs-sm {
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
@@ -137,7 +136,7 @@ button:hover {
     direction: rtl;
   }
 
-  /* line 156, ../sass/estilo.scss */
+  /* line 155, ../sass/estilo.scss */
   .row.reorder-xs-sm > [class*="col-"] {
     -webkit-transform: rotate(-180deg);
     -moz-transform: rotate(-180deg);
@@ -148,13 +147,13 @@ button:hover {
   }
 }
 /*PERMANENTES*/
-/* line 167, ../sass/estilo.scss */
+/* line 166, ../sass/estilo.scss */
 .contenedor {
   padding-top: 4rem;
   height: 100%;
 }
 
-/* line 172, ../sass/estilo.scss */
+/* line 171, ../sass/estilo.scss */
 .llenar {
   height: 100%;
   width: 100%;
@@ -164,7 +163,7 @@ button:hover {
   overflow: hidden;
 }
 
-/* line 181, ../sass/estilo.scss */
+/* line 180, ../sass/estilo.scss */
 .barra_nav {
   background-color: rgba(255, 255, 255, 0.9);
   height: 4rem;
@@ -183,20 +182,20 @@ button:hover {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.18);
 }
 @media screen and (max-width: 766px) {
-  /* line 181, ../sass/estilo.scss */
+  /* line 180, ../sass/estilo.scss */
   .barra_nav {
     padding-left: 2rem;
     padding-right: 2rem;
   }
 }
-/* line 198, ../sass/estilo.scss */
+/* line 197, ../sass/estilo.scss */
 .barra_nav img {
   position: relative;
   height: 60%;
   top: 0.5rem;
 }
 
-/* line 209, ../sass/estilo.scss */
+/* line 208, ../sass/estilo.scss */
 .menu {
   width: 75%;
   height: 100%;
@@ -207,7 +206,7 @@ button:hover {
   -o-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
 }
-/* line 214, ../sass/estilo.scss */
+/* line 213, ../sass/estilo.scss */
 .menu ul {
   width: 100%;
   height: 100%;
@@ -219,14 +218,14 @@ button:hover {
   padding: 0;
 }
 @media screen and (max-width: 991px) {
-  /* line 214, ../sass/estilo.scss */
+  /* line 213, ../sass/estilo.scss */
   .menu ul {
     text-align: center;
     vertical-align: inherit;
     display: inherit;
   }
 }
-/* line 229, ../sass/estilo.scss */
+/* line 228, ../sass/estilo.scss */
 .menu li {
   display: inline-block;
   padding: 5px;
@@ -252,7 +251,7 @@ button:hover {
   color: #F32A2A;
 }
 @media screen and (max-width: 991px) {
-  /* line 229, ../sass/estilo.scss */
+  /* line 228, ../sass/estilo.scss */
   .menu li {
     width: 100%;
     padding-top: 0.5rem;
@@ -263,13 +262,13 @@ button:hover {
   }
 }
 @media screen and (max-width: 991px) {
-  /* line 244, ../sass/estilo.scss */
+  /* line 243, ../sass/estilo.scss */
   .menu li:hover {
     background-color: #ffffff;
   }
 }
 @media screen and (max-width: 991px) {
-  /* line 209, ../sass/estilo.scss */
+  /* line 208, ../sass/estilo.scss */
   .menu {
     float: none;
     width: 100%;
@@ -282,7 +281,7 @@ button:hover {
   }
 }
 
-/* line 263, ../sass/estilo.scss */
+/* line 262, ../sass/estilo.scss */
 .btn_menu {
   padding: 10px 12px 10px 12px;
   display: inline-block;
@@ -293,27 +292,28 @@ button:hover {
   color: #222222;
   cursor: pointer;
 }
-/* line 272, ../sass/estilo.scss */
+/* line 271, ../sass/estilo.scss */
 .btn_menu span {
   display: inline-block;
   font-size: 1.2rem;
 }
-/* line 276, ../sass/estilo.scss */
+/* line 275, ../sass/estilo.scss */
 .btn_menu:hover {
   color: #a5a5a5;
 }
 
 /*GRAL SECCIONES*/
-/* line 282, ../sass/estilo.scss */
+/* line 281, ../sass/estilo.scss */
 .wrapper {
-  overflow: auto;
+  overflow-y: hidden;
 }
 
-/* line 285, ../sass/estilo.scss */
+/* line 284, ../sass/estilo.scss */
 .row_fluida {
-  white-space: nowrap;
   width: 600%;
   position: relative;
+  padding: 0;
+  margin: 0;
 }
 
 /* line 290, ../sass/estilo.scss */
@@ -321,70 +321,66 @@ button:hover {
   display: inline-block;
   width: 100vw;
   height: 100vh;
-  padding: 0;
-  margin: 0;
 }
 
-/* line 297, ../sass/estilo.scss */
+/* line 296, ../sass/estilo.scss */
 #seccion_1 {
-  background-color: pink;
+  padding-left: 0;
 }
 
-/* line 300, ../sass/estilo.scss */
-#seccion_2 {
-  background-color: orange;
-}
-
-/* line 303, ../sass/estilo.scss */
+/* line 301, ../sass/estilo.scss */
 #seccion_3 {
   background-color: blue;
 }
 
-/* line 306, ../sass/estilo.scss */
+/* line 304, ../sass/estilo.scss */
 #seccion_4 {
   background-color: skyblue;
 }
 
-/* line 309, ../sass/estilo.scss */
+/* line 307, ../sass/estilo.scss */
 #seccion_5 {
   background-color: red;
 }
 
-/* line 312, ../sass/estilo.scss */
+/* line 310, ../sass/estilo.scss */
 #seccion_6 {
   background-color: brown;
 }
 
+/* line 316, ../sass/estilo.scss */
+.dos {
+  height: 100vh;
+  overflow: inherit;
+  overflow-y: scroll;
+}
+
 /* INICIO */
-/* line 317, ../sass/estilo.scss */
+/* line 322, ../sass/estilo.scss */
 .banner {
   padding: 0;
   margin: 0;
 }
-/* line 319, ../sass/estilo.scss */
+/* line 324, ../sass/estilo.scss */
 .banner img {
   width: 100vw;
   height: 100vh;
 }
 @media screen and (max-width: 991px) {
-  /* line 319, ../sass/estilo.scss */
+  /* line 324, ../sass/estilo.scss */
   .banner img {
     width: auto;
   }
 }
 
-/* line 327, ../sass/estilo.scss */
+/* line 332, ../sass/estilo.scss */
 #slide_2, #slide_3 {
   display: none;
 }
 
 /*NOSOTROS*/
-/* line 332, ../sass/estilo.scss */
-.uno {
-  background-color: red;
-}
-
-/* line 335, ../sass/estilo.scss */
-.dos {
-  background-color: brown;
+/* line 337, ../sass/estilo.scss */
+.imagen_bg {
+  width: 100vw;
+  height: 100vh;
 }

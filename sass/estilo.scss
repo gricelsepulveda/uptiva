@@ -103,7 +103,6 @@ p{
 /*VARIOS*/
 body {
   	height: 100%;
-	/*overflow: hidden;*/
   	::selection{/*SELECCIONAR*/
     	background-color: $rojo_uptiva;
     	color: $bg_light;
@@ -144,7 +143,7 @@ button{
 
 
 /*REORDENAR COLUMNAS*/
- @media (max-width: 767px) {
+ @media (max-width: 991px) {
   .row.reorder-xs-sm {
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
@@ -280,25 +279,24 @@ button{
 
 /*GRAL SECCIONES*/
 .wrapper{
-	overflow: auto;
+	overflow-y: hidden;
 }
 .row_fluida{
-	white-space: nowrap;
 	width: 600%;
 	position: relative;
+	@include cero;
+
 }
 .seccion{
 	display: inline-block;
 	width: 100vw;
 	height: 100vh;
-	@include cero;
 }
 
 #seccion_1{
-	background-color: pink;
+	padding-left: 0;
 }
 #seccion_2{
-	background-color: orange;
 }
 #seccion_3{
 	background-color: blue;
@@ -313,6 +311,13 @@ button{
 	background-color: brown;
 }
 
+.uno{
+}
+.dos{
+	height: 100vh;
+	overflow: inherit;
+	overflow-y: scroll;
+}
 /* INICIO */
 .banner{
 	@include cero;
@@ -329,15 +334,8 @@ button{
 }
 
 /*NOSOTROS*/
-.uno{
-	background-color: red;
+.imagen_bg{
+	width: 100vw;
+	height: 100vh;
 }
-.dos{
-	background-color: brown;
-}
-
-.hola{
-	
-}
-
 
