@@ -72,15 +72,36 @@ h3{
 	letter-spacing: 1px;
 	text-transform: uppercase;
 }
+h4{
+	color: $texto;
+	font: {
+		family: 'Oswald', sans-serif;
+		weight: 500;
+		size: 0.8rem;
+	}
+	display: inline-block;
+}
+h5{
+	color: $destacado;
+	font: {
+		family: 'Roboto', sans-serif;
+		weight: 400;
+		size: 0.65rem;
+	}
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	display: inline-block;
+}
 
 p{
 	color: $texto;
 	font: {
 		family: 'Raleway', sans-serif;
-		size: 0.62rem;
+		size: 0.59rem;
 		weight: 400;
 	}
 	line-height: 1rem;
+	text-align: justify;
 }
 
 /*EFECTOS*/
@@ -285,8 +306,8 @@ button{
 	width: 600%;
 	position: relative;
 	@include cero;
-
 }
+
 .seccion{
 	display: inline-block;
 	width: 100vw;
@@ -295,28 +316,49 @@ button{
 
 #seccion_1{
 	padding-left: 0;
+	padding-right: 0;
+	margin-right: 15px;
 }
 #seccion_2{
+	background-image: url(../img/anime4.jpg);
+	background-size: cover;
+	padding-left: 0;
+	padding-right: 0;
 }
 #seccion_3{
-	background-color: blue;
+	padding-left: 0;
+	padding-right: 0;
+	background-color: $bg_light;
 }
 #seccion_4{
 	background-color: skyblue;
+	padding-left: 0;
+	padding-right: 0;
 }
 #seccion_5{
-	background-color: red;
+	background-image: url(../img/anime5.jpg);
+	background-size: cover;
+	padding-right: 0;
+	padding-left: 0;
 }
 #seccion_6{
-	background-color: brown;
+	background-image: url(../img/anime6.jpg);
+	background-size: cover;
+	padding-right: 0;
+	padding-left: 0;
 }
 
 .uno{
 }
 .dos{
 	height: 100vh;
+	position: relative;
+	max-height: auto;
 	overflow: inherit;
 	overflow-y: scroll;
+	background-color: rgba( $bg_light, .8);
+	padding: 1rem!important;
+	padding-bottom: 5rem!important;
 }
 /* INICIO */
 .banner{
@@ -325,7 +367,6 @@ button{
 		width: 100vw;
 		height: 100vh;
 		@media screen and (max-width:991px){
-			width: auto;
 		}
 	}
 }
@@ -333,9 +374,145 @@ button{
 	display: none;
 }
 
+.overlay{
+	position: absolute;
+	bottom: 5rem;
+	left: 2rem;
+	z-index: 2;
+}
+.overlay_social{
+	position: absolute;
+	top: 5rem;
+	left: 2rem;
+	z-index: 2;
+	color: $bg_light;
+}
+
+.titulo_1{
+	color: $bg_light; 
+	text-align: left;
+	font: {
+		family: 'Orbitron';
+		size: 1.8rem;
+		weight: 400;
+	}
+	line-height: 1.5rem;
+	text-shadow: 2px 1px 0px rgba(0, 0, 0, 1);
+}
+.titulo_2{
+	color: $bg_light; 
+	text-align: left;
+	font: {
+		family: 'Orbitron';
+		size: 1.8rem;
+		weight: 900;
+	}
+	line-height: 1.5rem;
+	text-shadow: 2px 1px 0px rgba(0, 0, 0, 1);
+}
+
 /*NOSOTROS*/
-.imagen_bg{
-	width: 100vw;
-	height: 100vh;
+.margen{
+	margin-top: 20%;
+	@media screen and (max-width:991px){
+		margin-top: 0%;
+	}
+}
+
+/*SERVICIOS*/
+#seccion_3 > div{
+	height: 200px;
+	margin-top: 2rem;
+	overflow: hidden;
+}
+
+.cnt_circulo{
+	background-color: $rojo_uptiva;
+	width: 150px;
+	height: 150px;
+	border-radius: 150px;
+	text-align: center;
+	display: inline-block;
+	border: 10px solid #ebebeb;
+}
+
+
+/*EVENTOS*/
+table{
+	th{
+		color: $destacado;
+		font: {
+			family: 'Oswald', sans-serif;
+			weight: 400;
+			size: 0.6rem;
+		}
+		letter-spacing: 1px;
+		line-height: 0.9rem;
+		text-transform: uppercase;
+		border: none!important;
+	}
+	td{
+		color: $texto;
+		font: {
+			family: 'Raleway', sans-serif;
+			size: 0.65rem;
+			weight: 400;
+		}
+		line-height: 1rem;
+		text-align: justify;
+		border: none!important;
+	}
+}
+
+.fecha{
+	color: $rojo_uptiva;
+	font: {
+		family: 'Raleway', sans-serif;
+		size: 0.55rem;
+		weight: 500;
+	}
+	line-height: 1rem;
+	text-align: justify;
+	width: 50%;
+}
+.parte_a{
+	width: 30%;
+	@media screen and (max-width:991px){
+		width: 50%;
+	}
+}
+.parte_b{
+	width: 70%;
+	@media screen and (max-width:991px){
+		width: 50%;
+	}
+}
+
+/*CONTACTOS*/
+.dos span{
+	color: $rojo_uptiva;
+	font-size: 0.75rem;
+	margin-right: 1rem;
+}
+
+.btn_icon{
+	background-color: rgba( $titulo_enlaces, .9);
+	padding-top: 8px;
+	width: 50px;
+	text-align: center;
+	height: 50px;
+	font-size: 24px;
+	border-radius: 25px;
+	display: inline-block;
+	margin-right: 0.5rem;
+	margin-bottom: 1rem;
+	cursor: pointer;
+	overflow: hidden;
+	@include animar;
+}
+#facebook > i, #twitter > i, #instagram > i, #linkedin > i{
+	display: block;
+	margin-top: 7px;
+	margin-bottom: 7px;
 }
 

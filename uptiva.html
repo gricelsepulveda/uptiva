@@ -12,6 +12,7 @@
 		<script src="js/jquery-1.12.0.min.js"></script><!--JQUERY COMPT IE 7 Y 8-->
 		<script src="js/bootstrap.min.js"></script><!--BOOTSTRAP JS-->
 		<script src="js/script.js"></script><!--SCRIPT STIO-->
+		<script type="text/javascript" src="js/google-map-custom.js"></script><!--MAPS-->
 		<link rel="stylesheet" href="css/estilo.css"><!--ESTILOS SITIO-->
 		<!--FUENTES BOOTSTRAP-->
 		<link rel="stylesheet" href="fonts/glyphicons-halflings-regular.eot">
@@ -19,6 +20,8 @@
 		<link rel="stylesheet" href="fonts/glyphicons-halflings-regular.ttf">
 		<link rel="stylesheet" href="fonts/glyphicons-halflings-regular.woff">
 		<link rel="stylesheet" href="fonts/glyphicons-halflings-regular.woff2">
+		<!--FONT AWESOME-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<!--FUENTES DEL SITIO-->
 		<link href='https://fonts.googleapis.com/css?family=Orbitron:400,900' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
@@ -50,6 +53,24 @@
 				</ul>
 			</nav><!--MENU end-->
 		</div><!--NAVBAR end-->
+		<div class="overlay">
+			<span class="titulo_1">Bienvenidos a</span><br/>
+			<span class="titulo_2">UPTIVA </span><span class="titulo_1">Producciones</span>
+		</div>
+		<div class="overlay_social">
+			<div class="btn_icon" id="facebook">
+				<i class="fa fa-facebook"></i>
+			</div>
+			<div class="btn_icon" id="twitter">
+				<i class="fa fa-twitter"></i>
+			</div>
+			<div class="btn_icon" id="instagram">
+				<i class="fa fa-instagram"></i>
+			</div>
+			<div class="btn_icon" id="linkedin">
+				<i class="fa fa-linkedin"></i>
+			</div>
+		</div>
 		<div class="contenedor"><!--CONTENEDOR GRAL init-->
 			<div class="llenar">
 				<div class="wrapper">
@@ -68,27 +89,124 @@
 						<section class="col-xs-12 col-sm-12 col-md-12 col-lg-12 seccion" id="seccion_2"><!--NOSOTROS-->
 							<div class="row reorder-xs-sm no-gutter">
 								<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 uno">
-									<img src="img/anime1.jpg" class="imagen_bg">
 								</div>
 								<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 dos">
-									<p>
-										Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
-										Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
+									<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+										<h1>Nosotros</h1>
+										<h2>El fin de un trabajo es el principio de otro(Dalí).</h2>
+										<p>
+											Nuestro equipo es altamente calificado con profesionales y técnicos capacitados para cumplir los requisitos de marketing que necesitan nuestros clientes.
+											</br>
+											En un evento no hay margenes de error, es por esto que para nosotros es; hacerlo bien, a la primera y en el menor tiempo posible.
+											<br/>
 										</p>
+										<h3 class="hidden-xs hidden-sm">Nuestros clientes:</h3>
+									</div>
+									<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 margen">
+										<h3>Contáctenos</h3>
+										<p>Descubra una nueva posibilidad en su negocio</p>
+										<button>formulario</button>
+										<h3 class="hidden-md hidden-lg">Nuestros clientes:</h3>
+									</div>
 								</div>
 							</div>
 						</section>
 						<section class="col-xs-12 col-sm-12 col-md-12 col-lg-12 seccion" id="seccion_3"><!--SERVICIOS-->
-							seccion 3
+							<div class="center-block">
+								<img src="img/anime3.jpg" class="img-responsive">
+							</div>
+							<h1 class="text-center">SERVICIOS</h1>
+							<div class="row">
+								<div class="col-xs-12 col-sm-6 col-md-4 col-lg-offset-1 col-lg-2">
+									<div class="cnt_circulo">
+										<img src="oli.svg">
+									</div>
+									<h3>EVENTOS</h3>
+									<span class="fecha">Lorem ipsum dolor sit amet</span>
+									<p>
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. 
+									</p>
+								</div>
+ 							</div>
 						</section>
 						<section class="col-xs-12 col-sm-12 col-md-12 col-lg-12 seccion" id="seccion_4"><!--PORTAFOLIO-->
-							seccion 4
+							seccion en construcción
 						</section>
 						<section class="col-xs-12 col-sm-12 col-md-12 col-lg-12 seccion" id="seccion_5"><!--EVENTOS-->
-							seccion 5
+							<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 uno">
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 dos">
+								<h1>Noticias &#38; eventos</h1>
+  								<table class="table">
+										<tr>
+											<th class="parte_a">JUL - 2015</th>
+											<th class="parte_b">ACTIVACIONES POP NINTENDO</th>
+										</tr>
+										<tr>
+											<td class="parte_a fecha">11:00 am - 21:00 pm</td>
+											<td class="parte_b">
+												PDV para temporada de Vacaciones de invierno y día del Niño. Los esperamos en las importantes tiendas del retail del país
+											</td>
+										</tr>
+  								</table>
+  								<table class="table">
+									<tr>
+										<th class="parte_a">AGO 13-14 2015</th>
+										<th class="parte_b">FESTIGAME 2015</th>
+									</tr>
+									<tr>
+										<td class="parte_a fecha">10:00 am - 20:00 pm</td>
+										<td class="parte_b">
+											Esperamos estar junto a Nintendo en el stand en esta nueva jornada más importante del gamer del país.
+										</td>
+									</tr>
+  								</table>
+   								<table class="table">
+									<tr>
+										<th class="parte_a">AGO 13-14 2015</th>
+										<th class="parte_b">FESTIGAME 2015</th>
+									</tr>
+									<tr>
+										<td class="parte_a fecha">10:00 am - 20:00 pm</td>
+										<td class="parte_b">
+											Esperamos estar junto a Nintendo en el stand en esta nueva jornada más importante del gamer del país.
+										</td>
+									</tr>
+  								</table>
+							</div>
 						</section>
 						<section class="col-xs-12 col-sm-12 col-md-12 col-lg-12 seccion" id="seccion_6"><!--CONTACTO-->
-							seccion 6
+							<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 uno">
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 dos">
+								<h1>Contáctanos</h1>
+								<p>Aquí están todos nuestros datos de contacto.</p>
+								<span class="glyphicon glyphicon-map-marker"></span><h5>284 DIAGONAL GASPAR, LA FLORIDA, CHILE</h5>
+								<br/>
+								<span class="glyphicon glyphicon-phone"></span><h4>+569 9 864 5525</h4>
+								<br/>
+								<span class="glyphicon glyphicon-envelope"></span><h4>CONTACTO@UPTIVA.CL</h4>
+								<br/>
+								<br/>
+								<div class="btn_icon" id="facebook">
+									<i class="fa fa-facebook"></i>
+									<i class="fa fa-facebook"></i>
+								</div>
+								<div class="btn_icon" id="twitter">
+									<i class="fa fa-twitter"></i>
+									<i class="fa fa-twitter"></i>
+								</div>
+								<div class="btn_icon" id="instagram">
+									<i class="fa fa-instagram"></i>
+									<i class="fa fa-instagram"></i>
+								</div>
+								<div class="btn_icon" id="linkedin">
+									<i class="fa fa-linkedin"></i>
+									<i class="fa fa-linkedin"></i>
+								</div>
+								<br/><br/>
+								<button>formulario de contacto</button>
+							</div>
 						</section>
 					</div>
 				</div>
