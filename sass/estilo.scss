@@ -42,6 +42,16 @@ html{
 	}
 }
 
+@mixin mini{
+	color: $rojo_uptiva;
+	font: {
+		family: 'Raleway', sans-serif;
+		size: 0.55rem;
+		weight: 500;
+	}
+	line-height: 1rem;
+}
+
 h1{
 	color: $destacado;
 	font: {
@@ -374,6 +384,7 @@ button{
 	display: none;
 }
 
+/*BIENVENIDOS UPTIVA*/
 .overlay{
 	position: absolute;
 	bottom: 5rem;
@@ -393,10 +404,10 @@ button{
 	text-align: left;
 	font: {
 		family: 'Orbitron';
-		size: 1.8rem;
+		size: 2rem;
 		weight: 400;
 	}
-	line-height: 1.5rem;
+	line-height: 1.8rem;
 	text-shadow: 2px 1px 0px rgba(0, 0, 0, 1);
 }
 .titulo_2{
@@ -404,10 +415,10 @@ button{
 	text-align: left;
 	font: {
 		family: 'Orbitron';
-		size: 1.8rem;
+		size: 2rem;
 		weight: 900;
 	}
-	line-height: 1.5rem;
+	line-height: 1.6rem;
 	text-shadow: 2px 1px 0px rgba(0, 0, 0, 1);
 }
 
@@ -420,10 +431,30 @@ button{
 }
 
 /*SERVICIOS*/
-#seccion_3 > div{
-	height: 200px;
-	margin-top: 2rem;
-	overflow: hidden;
+#seccion_3 {
+	height: 150vh;
+	max-height: auto;
+	overflow: inherit;
+	overflow-y: scroll;
+	> .apertura {
+		height: 200px;
+		margin-top: 0rem;
+		overflow: hidden;
+	}
+	span {
+		text-align: center;
+		display: inline-block;
+		width: 100%;
+		@include mini;
+	}
+}
+
+.cnt_serv{
+	padding: {
+		left: 0.5rem;
+		right: 0.5rem;
+	}
+	background-color: yellow;
 }
 
 .cnt_circulo{
@@ -432,10 +463,16 @@ button{
 	height: 150px;
 	border-radius: 150px;
 	text-align: center;
-	display: inline-block;
 	border: 10px solid #ebebeb;
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+	> img{
+		position: relative;
+		height: 10%;
+		margin-top: 45%;
+	}
 }
-
 
 /*EVENTOS*/
 table{
@@ -465,16 +502,11 @@ table{
 }
 
 .fecha{
-	color: $rojo_uptiva;
-	font: {
-		family: 'Raleway', sans-serif;
-		size: 0.55rem;
-		weight: 500;
-	}
-	line-height: 1rem;
+	@include mini;
 	text-align: justify;
 	width: 50%;
 }
+
 .parte_a{
 	width: 30%;
 	@media screen and (max-width:991px){
