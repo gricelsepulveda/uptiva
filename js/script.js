@@ -84,6 +84,10 @@ $(document).ready(function(){
         $(".overlay_social").fadeOut("fast");
         $("#seccion_1").css({"marginRight":'0px'});
     });
+    /*ACTIVAR LINK*/
+    $("nav.menu > ul > li").click(function(){
+        $("nav.menu > ul > li").removeClass("activo");
+        $(this).addClass("activo");
+    });
+    /*GALERIA*/
 });
-
-

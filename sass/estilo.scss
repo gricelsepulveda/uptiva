@@ -126,10 +126,6 @@ p{
  	padding: 0;
     margin: 0;
  }
- 
- .activo{
- 	color: $rojo_uptiva!important;
- }
 
 /*VARIOS*/
 body {
@@ -290,6 +286,10 @@ button{
 	@include animar;
 }
 
+.activo{
+	color: $rojo_uptiva!important;
+}
+
 .btn_menu{
 	padding:10px 12px 10px 12px;
 	display: inline-block;
@@ -309,58 +309,59 @@ button{
 }
 
 /*GRAL SECCIONES*/
-.wrapper{
+.wrapper {
 	overflow-y: hidden;
 }
-.row_fluida{
+.row_fluida {
 	width: 600%;
 	position: relative;
 	@include cero;
 }
 
-.seccion{
+.seccion {
 	display: inline-block;
 	width: 100vw;
 	height: 100vh;
 }
 
-#seccion_1{
+#seccion_1 {
 	padding-left: 0;
 	padding-right: 0;
 	margin-right: 15px;
 }
-#seccion_2{
+#seccion_2 {
 	background-image: url(../img/anime4.jpg);
 	background-size: cover;
 	padding-left: 0;
 	padding-right: 0;
 }
-#seccion_3{
+#seccion_3 {
 	padding-left: 0;
 	padding-right: 0;
 	background-color: $bg_light;
 }
 #seccion_4{
-	background-color: skyblue;
-	padding-left: 0;
-	padding-right: 0;
+	background-color: rgba( $bg, .2);
+	padding-left: 25px;
+	padding-right: 25px;
 }
-#seccion_5{
+
+#seccion_5 {
 	background-image: url(../img/anime5.jpg);
 	background-size: cover;
 	padding-right: 0;
 	padding-left: 0;
 }
-#seccion_6{
+#seccion_6 {
 	background-image: url(../img/anime6.jpg);
 	background-size: cover;
 	padding-right: 0;
 	padding-left: 0;
 }
 
-.uno{
+.uno {
 }
-.dos{
+.dos {
 	height: 100vh;
 	position: relative;
 	max-height: auto;
@@ -371,7 +372,7 @@ button{
 	padding-bottom: 5rem!important;
 }
 /* INICIO */
-.banner{
+.banner {
 	@include cero;
 	img {
 		width: 100vw;
@@ -380,18 +381,18 @@ button{
 		}
 	}
 }
-#slide_2, #slide_3{
+#slide_2, #slide_3 {
 	display: none;
 }
 
 /*BIENVENIDOS UPTIVA*/
-.overlay{
+.overlay {
 	position: absolute;
 	bottom: 5rem;
 	left: 2rem;
 	z-index: 2;
 }
-.overlay_social{
+.overlay_social {
 	position: absolute;
 	top: 5rem;
 	left: 2rem;
@@ -399,7 +400,7 @@ button{
 	color: $bg_light;
 }
 
-.titulo_1{
+.titulo_1 {
 	color: $bg_light; 
 	text-align: left;
 	font: {
@@ -410,7 +411,7 @@ button{
 	line-height: 1.8rem;
 	text-shadow: 2px 1px 0px rgba(0, 0, 0, 1);
 }
-.titulo_2{
+.titulo_2 {
 	color: $bg_light; 
 	text-align: left;
 	font: {
@@ -423,7 +424,7 @@ button{
 }
 
 /*NOSOTROS*/
-.margen{
+.margen {
 	margin-top: 20%;
 	@media screen and (max-width:991px){
 		margin-top: 0%;
@@ -449,15 +450,15 @@ button{
 	}
 }
 
-.cnt_serv{
+.cnt_serv {
 	padding: {
 		left: 0.5rem;
 		right: 0.5rem;
+		top: 0.25rem;
 	}
-	background-color: yellow;
 }
 
-.cnt_circulo{
+.cnt_circulo {
 	background-color: $rojo_uptiva;
 	width: 150px;
 	height: 150px;
@@ -466,13 +467,90 @@ button{
 	border: 10px solid #ebebeb;
 	position: relative;
 	margin: 0 auto;
-	text-align: center;
+	-webkit-box-shadow: inset 15px 16px 40px -9px rgba(0,0,0,0.45);
+	-moz-box-shadow: inset 15px 16px 40px -9px rgba(0,0,0,0.45);
+	box-shadow: inset 15px 16px 40px -9px rgba(0,0,0,0.45);
 	> img{
 		position: relative;
-		height: 10%;
-		margin-top: 45%;
+		height: 30%;
+		margin-top: 35%;
 	}
 }
+
+/* MASONRY */
+
+.lista_masonry > li {
+	display: inline-block;
+	margin-right: 10px;
+	margin-top: 1rem;
+	margin-bottom: 5px;
+	cursor: pointer;
+	cursor: pointer;
+	@include mini;
+	color: $texto;
+}
+
+.activo_masonry{
+	color: $rojo_uptiva!important;
+}
+
+*, *:before, *:after {box-sizing:  border-box !important;}
+
+.masonry {
+	-moz-column-width: 18em;
+	-webkit-column-width: 18em;
+	-moz-column-gap: 1em;
+	-webkit-column-gap:1em; 
+}
+
+.item {
+	display: inline-block;
+	padding-top: 10px;
+	width:  100%; 
+}
+
+.cnt_masonry {
+	position:relative;
+	display: block;
+	background-color: #fff;
+	padding: 10px;
+	padding-bottom: 5px;
+}
+
+.img_masonry {
+	background-color: #eeeeee;
+	position: relative;
+	width: 100%;
+	height: 60%;
+	color: #000;
+	margin-bottom: 10px;
+	cursor: pointer;
+	img {
+		width: 100%;
+		height: auto;
+		}
+}
+
+.cubre {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	text-align: center;
+	&:hover {
+		background-color: rgba( $bg_light, .8)!important;
+		i {
+			color: $texto;
+		}
+	}
+	i {
+		font-size: 25px;
+		color: transparent;
+	}
+	@include animar;
+}
+
 
 /*EVENTOS*/
 table{
